@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class calculatorV2 {
+    public static void main( String args[]){
+        System.out.println("Enter any two numbers:=");
+        Scanner obj = new Scanner( System.in);
+       int a,b,c,ch;
+        a=obj.nextInt();
+        b=obj.nextInt();
+        System.out.println("Enter your case:=");
+        ch = obj.nextInt();
+        switch (ch){
+            case 1: c= a+b;
+                System.out.println("addition :="+c);
+                break;
+            case 2 :c=a-b;
+            System.out.println("Subtraction "+c);
+                    break;
+            case 3 : c=a*b;
+                System.out.println("Multiplication"+c);
+                    break;
+            case 4 : c=a/b;
+                System.out.println("Division"+c);
+                    break;
+            case 5 :c=a%b;
+                System.out.println("Remainder "+c);
+                    break;
+            default:
+                System.out.println("Enter a valid operator");
+                // Here the switch case makes it a difficult or unfriendly one but for a java user it is not that hefty.
+        }
+
+    }
+}
