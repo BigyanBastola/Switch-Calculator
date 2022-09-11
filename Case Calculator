@@ -1,9 +1,24 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
-public class calculatorV2 {
-    public static void main( String args[]){
-        System.out.println("Enter any two numbers:=");
-        Scanner obj = new Scanner( System.in);
-       int a,b,c,ch;
+public class project {
+    public static void main( String args []){
+        String d ,e;//Conversation mode
+        System.out.println("Hi. "+ "Your name is : ");
+        Scanner obj= new Scanner(System.in);
+        d =obj.next();
+
+        System.out.println(d);
+        System.out.println("Welcome I am a Chat bot"+d);
+
+
+        System.out.println("I can do normal conversation and some math calculations. "+"How can I help you today.");
+
+        System.out.println("For math press yes ");
+        e = obj.next();
+        System.out.println("Welcome abroad!. For addition is 1 ,Subtraction is 2, Multiply is 3, Divide is 4." +
+                "Enter any  two numbers and your case.");
+
+        int a,b,c,ch;
         a=obj.nextInt();
         b=obj.nextInt();
         System.out.println("Enter your case:=");
@@ -13,21 +28,20 @@ public class calculatorV2 {
                 System.out.println("addition :="+c);
                 break;
             case 2 :c=a-b;
-            System.out.println("Subtraction "+c);
-                    break;
+                System.out.println("Subtraction:= "+c);
+                break;
             case 3 : c=a*b;
-                System.out.println("Multiplication"+c);
-                    break;
+                System.out.println("Multiplication :="+c);
+                break;
             case 4 : c=a/b;
-                System.out.println("Division"+c);
-                    break;
+                System.out.println("Division :="+c);
+                break;
             case 5 :c=a%b;
-                System.out.println("Remainder "+c);
-                    break;
+                System.out.println("Remainder:= "+c);
+                break;
             default:
                 System.out.println("Enter a valid operator");
-                // Here the switch case makes it a difficult or unfriendly one but for a java user it is not that hefty.
-        }
+
 
     }
-}
+}}
